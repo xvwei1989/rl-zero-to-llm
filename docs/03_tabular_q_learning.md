@@ -6,6 +6,8 @@
 
 ## 0. TD 更新在干什么（把 Q 往 target 拉）
 
+![TD error](../figures/03_td_error.png)
+
 ```mermaid
 flowchart LR
   Qold[当前估计 Q(s,a)] -->|比较| delta[TD error δ = target - Q(s,a)]

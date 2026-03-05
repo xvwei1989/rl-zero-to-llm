@@ -6,6 +6,8 @@
 
 ## 0. RL 交互回路（一张图看懂）
 
+![RL loop](../figures/00_rl_loop.png)
+
 ```mermaid
 flowchart LR
   A[Agent\n策略 π(a|s)] -- 选择动作 a --> E[Environment\n环境]

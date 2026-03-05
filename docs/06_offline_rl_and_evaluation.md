@@ -6,6 +6,8 @@
 
 ## 0. 离线 RL 的核心风险：学到数据没覆盖的动作
 
+![Offline OOD risk](../figures/06_offline_ood.png)
+
 ```mermaid
 flowchart LR
   D[离线数据集 D\n(来自行为策略 b)] --> train[训练 Q / π]

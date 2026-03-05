@@ -13,5 +13,8 @@ __pycache__/
 /data/*.csv
 /data/*.npz
 
+# Generated figures
+/figures/*.png
+
 # OS
 .DS_Store

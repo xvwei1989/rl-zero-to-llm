@@ -6,6 +6,8 @@
 
 ## 0. DQN 的两大稳定器（Replay + Target）
 
+![DQN replay+target](../figures/04_dqn_replay_target.png)
+
 ```mermaid
 flowchart TB
   subgraph Data[交互数据]

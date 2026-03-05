@@ -6,6 +6,8 @@
 
 ## 0. Bellman 直觉：价值函数为什么能递推
 
+![Bellman intuition](../figures/02_bellman_intuition.png)
+
 ```mermaid
 flowchart LR
   S[当前状态 s] -->|做动作 a| R[得到奖励 r]

@@ -6,6 +6,8 @@
 
 ## 0. PPO 为什么稳：限制策略更新幅度
 
+![PPO clip](../figures/05_ppo_clip.png)
+
 ```mermaid
 flowchart LR
   old[旧策略 π_old] -->|采样轨迹| data[(s,a,logp_old,adv)]
