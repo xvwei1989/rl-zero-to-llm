@@ -6,6 +6,9 @@ __pycache__/
 .pytest_cache/
 .venv/
 
+# Jupyter
+.ipynb_checkpoints/
+
 # Data outputs
 /data/*.csv
 /data/*.npz

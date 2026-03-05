@@ -26,13 +26,18 @@
 - `data/`：模拟数据（CSV/NPZ）
 
 ## 快速开始
-### 1) 环境
+### 1) 环境（一键）
 建议 Python 3.10+。
 
 ```bash
-python -m venv .venv
+make setup
 source .venv/bin/activate
-pip install -r requirements.txt
+```
+
+如果你不想用 Makefile：
+```bash
+bash scripts/setup.sh
+source .venv/bin/activate
 ```
 
 ### 2) 跑一个最小例子：多臂老虎机
