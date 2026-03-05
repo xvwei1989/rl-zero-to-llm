@@ -3,6 +3,9 @@ matplotlib>=3.7
 pandas>=2.0
 tqdm>=4.66
 
+# Notebook
+jupyter>=1.0
+
 # 深度学习部分（DQN/PPO）
 torch>=2.1
 
