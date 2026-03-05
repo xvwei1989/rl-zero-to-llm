@@ -4,6 +4,23 @@
 
 ---
 
+## 0. DQN 的两大稳定器（Replay + Target）
+
+```mermaid
+flowchart TB
+  subgraph Data[交互数据]
+    env[Environment] -->|s,r,s'| buf[Replay Buffer]
+  end
+
+  subgraph Learn[训练]
+    buf -->|random batch| q[Online Qθ]
+    qT[Target Qθ-] -->|计算 target| loss[TD Loss]
+    q -->|预测 Q(s,a)| loss
+    loss -->|梯度下降| q
+    q -. 每隔 N 步拷贝 .-> qT
+  end
+```
+
 ## 1. 为什么表格 Q-learning 不够用
 表格法要求你对每个 (s,a) 存一个数。
 - Gridworld：25 个状态没问题

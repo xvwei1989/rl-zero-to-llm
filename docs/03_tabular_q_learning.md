@@ -4,6 +4,15 @@
 
 ---
 
+## 0. TD 更新在干什么（把 Q 往 target 拉）
+
+```mermaid
+flowchart LR
+  Qold[当前估计 Q(s,a)] -->|比较| delta[TD error δ = target - Q(s,a)]
+  target[target = r + γ·max Q(s',·)] -->|比较| delta
+  delta -->|用学习率 α 更新| Qnew[Q(s,a) ← Q(s,a) + α·δ]
+```
+
 ## 1. 从“背公式”换成“修正打分”
 你可以把 Q(s,a) 当作：
 - 你对“在 s 做 a 之后长期能拿多少分”的**当前估计**

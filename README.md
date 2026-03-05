@@ -13,7 +13,7 @@
 - **LLM 里的 RL（RLHF/RLAIF/DPO/GRPO…）**：最新进展与工程实践直觉
 
 ## 目录
-- `docs/`
+- `docs/`（每章正文，含 Mermaid 图解）
   - `00_rl_in_10_minutes.md`
   - `01_bandit_explore_exploit.md`
   - `02_mdp_gridworld.md`

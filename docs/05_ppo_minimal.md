@@ -4,6 +4,18 @@
 
 ---
 
+## 0. PPO 为什么稳：限制策略更新幅度
+
+```mermaid
+flowchart LR
+  old[旧策略 π_old] -->|采样轨迹| data[(s,a,logp_old,adv)]
+  new[新策略 π_θ] -->|计算 logp| ratio[r = π_θ(a|s)/π_old(a|s)]
+  data --> ratio
+  ratio --> clip[clip 到 1±ε]
+  clip --> obj[最大化裁剪目标]
+  obj --> update[更新 θ]
+```
+
 ## 1. 生动案例：教客服机器人更会“说话”
 你训练一个对话机器人（策略）：
 - 它说一句话（动作）
