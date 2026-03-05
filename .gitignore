@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+
+# Data outputs
+/data/*.csv
+/data/*.npz
+
+# OS
+.DS_Store
